@@ -9,6 +9,7 @@ import { ReactQueryB } from './components/ReactQueryB'
 import { StateProvider } from './context/StateProvider'
 import { Layout } from './components/Layout'
 import { MainContext } from './components/MainContext'
+import { MainRTKit } from './components/MainRTKit'
 
 const queryClient = new QueryClient({
   defaultOptions: {
@@ -31,6 +32,7 @@ const App: VFC = () => {
               <Route path="/fetch-a" element={<ClassicalFetchA />}></Route>
               <Route path="/fetch-b" element={<ClassicalFetchB />}></Route>
               <Route path="/main-context" element={<MainContext />}></Route>
+              <Route path="/main-rtkit" element={<MainRTKit />}></Route>
             </Routes>
           </Layout>
         </StateProvider>
